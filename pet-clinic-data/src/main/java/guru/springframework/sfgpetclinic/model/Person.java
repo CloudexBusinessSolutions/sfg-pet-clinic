@@ -1,6 +1,7 @@
 package guru.springframework.sfgpetclinic.model;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.Column;
 import javax.persistence.MappedSuperclass;
@@ -14,4 +15,5 @@ public class Person extends BaseEntity
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
+    
 }
